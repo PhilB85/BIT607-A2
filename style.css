@@ -1,0 +1,146 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body base styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Header and navigation */
+header {
+  background-color: #ffcc66;
+  padding: 10px 20px;
+}
+
+nav h1 {
+  margin-bottom: 10px;
+  font-size: 1.8em;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav ul li {
+  margin: 5px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #0066cc;
+}
+
+/* Main content */
+main {
+  padding: 20px;
+}
+
+main h2 {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  color: #444;
+}
+
+main p {
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Table styling (Services page) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #ffcc66;
+  color: #333;
+}
+
+/* Gallery grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Form styling (Booking and Contact pages) */
+form {
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ffcc66;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e6b800;
+}
+
+/* Footer */
+footer {
+  background-color: #ffcc66;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
