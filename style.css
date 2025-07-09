@@ -68,10 +68,14 @@ main p {
   margin-right: auto;
 }
 
+/* Image styling */
 main img {
-  max-width: 100%;
-  height: auto;
+  width: 400px;
+  height: 400px;
+  object-fit: cover; /* ensures image fills area without distortion */
   border-radius: 8px;
+  display: block;
+  margin: 0 auto 20px auto; /* center image with bottom spacing */
 }
 
 /* Table styling (Services page) */
