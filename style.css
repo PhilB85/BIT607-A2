@@ -71,14 +71,14 @@ main p {
 /* Gallery image grid */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* ensures exactly 4 images across */
+  grid-template-columns: repeat(4, 1fr); /* exactly 4 images across */
   gap: 15px;
   margin-bottom: 20px;
 }
 
 .gallery img {
   width: 100%;
-  height: 200px;
+  height: 280px; /* increased image height */
   object-fit: cover; /* ensures images fill area without distortion */
   border-radius: 8px;
 }
