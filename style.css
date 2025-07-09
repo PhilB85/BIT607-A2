@@ -17,6 +17,7 @@ body {
 header {
   background-color: #ffcc66;
   padding: 10px 20px;
+  text-align: center; /* center header content */
 }
 
 nav h1 {
@@ -29,7 +30,9 @@ nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* center nav tabs */
   gap: 15px;
+  padding: 0;
 }
 
 nav ul li {
@@ -49,6 +52,7 @@ nav ul li a:hover {
 /* Main content */
 main {
   padding: 20px;
+  text-align: center; /* center headings and content by default */
 }
 
 main h2 {
@@ -60,6 +64,8 @@ main h2 {
 main p {
   margin-bottom: 20px;
   max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main img {
@@ -82,65 +88,4 @@ th, td {
 }
 
 th {
-  background-color: #ffcc66;
-  color: #333;
-}
-
-/* Gallery grid */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
-}
-
-.gallery-grid img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-/* Form styling (Booking and Contact pages) */
-form {
-  max-width: 500px;
-  margin: 0 auto 20px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-label {
-  font-weight: bold;
-}
-
-input, textarea, button {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  background-color: #ffcc66;
-  color: #333;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #e6b800;
-}
-
-/* Footer */
-footer {
-  background-color: #ffcc66;
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 20px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
+  background-
